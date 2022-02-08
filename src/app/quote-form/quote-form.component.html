@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-md " data-toggle="modal" data-target="#modelId">
-  Add Quote
+  Write Quote
 </button>
 
 <!-- Modal -->
@@ -8,7 +8,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add a Quote</h5>
+                <h5 class="modal-title">Write Your Quote</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -21,7 +21,7 @@
                       <label for="">Name</label>
                       <input type="text" name="userName" id="userName" class="form-control" placeholder="Please input your name..." required #userName='ngModel' [(ngModel)]="newQuote.userName">
                       <div [hidden]="userName.value||userName.pristine" class="alert alert-danger">
-                          <p>Name is required</p>
+                          <p>write Your Name</p>
                       </div>
                       
                     </div>
@@ -31,7 +31,7 @@
                               <label for="">Quote</label>
                               <textarea class="form-control" name="quote" id="quote" rows="3" placeholder="Please input Quote" required #quote='ngModel' [(ngModel)]="newQuote.quote"></textarea>
                               <div [hidden]="quote.value||quote.pristine" class="alert alert-danger">
-                                <p>Quote is required</p>
+                                <p>Write Your Quote</p>
                             </div>
                             </div>
                         </div>
