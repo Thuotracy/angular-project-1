@@ -18,7 +18,7 @@
                         <h5 class="card-title"(click)='toggleDetails(i)'>{{quote.id}} <br><i class="fas  fa-quote-left    "></i> <br><br>{{quote.quote}}  </h5>
                         
                         <div class="card-text"*ngIf="quote.showQuoteDetails">
-                            <p><i class="far fa-thumbs-up    " (click)='upvoteFunc(i)' (click)='mostPopular()'></i>  <i style="text-indent: 2em;" (click)='downvoteFunc(i)' class="far fa-thumbs-down    "></i></p>
+                            <p><i class="far fa-thumbs-up    " (click)='upvoteFunc(i)'></i>  <i style="text-indent: 2em;" (click)='downvoteFunc(i)' class="far fa-thumbs-down    "></i></p>
                             <app-quote-details [quote]='quote' (isDeleted)='deleteQuote($event,i)'></app-quote-details>
         
                         </div>

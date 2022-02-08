@@ -27,10 +27,6 @@
     float: left;
 }
 
-.popularQuote{
-    width: 20%;
-    float: right;
-}
 .card-columns{
     column-count: 5;
 }
