@@ -7,7 +7,7 @@
 A webpage that a person can write quotes or delete them and other people can like or dislike these quotes.
 
 ## Live link
-thuotracy.github.io/delanistudio/
+https://thuotracy.github.io/angular-project-1/
 
 ## Known Bugs
 No. There are no known bugs.
