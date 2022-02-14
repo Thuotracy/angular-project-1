@@ -17,7 +17,13 @@ export class QuoteComponent implements OnInit {
     new Quote(5,new Date(2019,2,28),"Lucy","Polly Mlati","The truth shall set you free.",20,5,false),
    ];
 
- 
+   populars:Quote[]=[
+    new Quote(1,new Date(2019,2,28),"Ruru","Oscar Wilde","Be yourself everyone else is already taken.",40,10,false),
+    new Quote(3,new Date(2020,1,26),"Jane","Mahatma Gandhi","Be the change that you wish to see in the world.",40,10,false),
+    new Quote(8,new Date(2019,11,28),"Lillian","Will Rogers","Don’t Let Yesterday Take Up Too Much Of Today.",40,50,false),
+  
+];
+
 
 
   
@@ -54,6 +60,29 @@ export class QuoteComponent implements OnInit {
     var down=this.quotes[index].downvote+1;
     this.quotes[index].downvote=down;
   
+}
+mostPopular(){
+
+  
+  this.populars.splice(0,this.populars.length);
+
+  var largest=this.quotes[0].upvote;
+  var number=null;
+  for (var i=0;i<this.quotes.length;i++){
+    number=this.quotes[i].upvote
+
+    largest=Math.max(largest,number)
+  }
+  
+  for (var i=0;i<this.quotes.length;i++){
+    
+    if(this.quotes[i].upvote===largest){
+      this.populars.push(this.quotes[i]);
+    }
+  }
+
+  
+
 }
 
 
